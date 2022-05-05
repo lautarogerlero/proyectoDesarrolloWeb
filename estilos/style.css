@@ -1,0 +1,406 @@
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+}
+
+header {
+    grid-area: header;
+    border-radius: 5px;
+    padding-top: 5px;
+    background-image: url(../img/bandera_nav.jpg);
+    display: flex;
+    justify-content: flex-start;
+    height: 8vh;
+} 
+
+/* Aca va a ir el menu desplegable */
+.imagenMenu {
+    width: 20px;
+    height: 20px;
+    border-radius: 15%;
+    margin-left: 10px;
+}
+
+.menu {
+    display: none;
+}
+
+nav > ul li {
+    list-style-type: none;
+    padding: 5px;
+    margin: 10px;
+    border: solid #333;
+    background-color: #333;
+    border-radius: 10%;
+    text-decoration: none;
+    
+} 
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+} 
+
+ul li {
+    list-style-type: none;
+}
+
+main {
+    grid-area: main;
+    border-radius: 5px;
+    padding-top: 5px;
+    margin: 5px 5px;
+    color: white;
+}
+
+section {
+    color: white;
+}
+
+.titulo {
+    margin: 5px 0px;
+}
+
+.parrafo {
+    margin: 10px 0px;
+}
+
+#content1 {
+    background: #6fffd2;
+    grid-area: content1;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+iframe {
+    width: 98%;
+    margin: 0px 5px;
+}
+
+#content2 {
+    background: #64ffda;
+    grid-area: content2;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+footer {
+    grid-area: footer;
+    border-radius: 5px;
+    padding-top: 5px;
+    display: flex;
+    background-image: url(../img/bandera_nav.jpg);
+    height: 10vh;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    margin-left: 5px;
+}
+
+/* INDEX */
+.containerIndex {
+    display:grid;
+    height:100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 2.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "content1"
+    "content2"
+    "footer";
+    gap: 0.2rem;
+    /* font-weight: 800;
+    font-size: 15px;
+    color: #004d40; */
+    text-align:center;
+}
+
+/* CIRCUITOS */
+.containerCircuitos {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0.2rem;
+    grid-template-areas: 
+    "header"
+    "main"
+    "calendario"
+    "galeria"
+    "footer";
+    text-align: center;
+}
+
+
+.calendario {
+    grid-area: calendario;
+    /* display: flex;
+    justify-content: center; */
+    margin: 5px 10px;
+}
+
+.imagenCalendario {
+    width: 95%;
+    height: auto;
+
+} 
+
+.galeria {
+    grid-area: galeria;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.imagenGaleria {
+    width: 95vw;
+    height: 30vh;
+}
+
+figcaption {
+    margin: 5px 0px;
+}
+
+/* EQUIPOS */
+.containerEquipos {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+    gap: 0.2rem;
+    grid-template-areas: 
+    "header"
+    "main"
+    "autos"
+    "pilotos"
+    "footer";
+}
+
+.auto {
+    grid-area: autos;
+}
+
+.tituloAuto {
+    margin: 10px 0px;
+}
+
+.pilotos {
+    grid-area: pilotos;
+}
+
+.tituloPilotos {
+    margin: 10px 0px;
+}
+
+.imagenAuto, .imagenPiloto {
+    width: 90vw;
+    height: 30vh;
+}
+
+/* CONTACTO */
+.containerContacto {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 3fr 0.8fr;
+    text-align: center;
+    gap: 0.2rem;
+    grid-template-areas: 
+    "header"
+    "main"
+    "containerImagenContacto"
+    "footer";
+}
+
+.containerImagenContacto {
+    grid-area: containerImagenContacto;
+    margin: 20px 0px;
+}
+
+.imagenContacto {
+    width: 90vw;
+    border-radius: 8%;
+}
+
+.formulario {
+    width: 80vw;
+    /* height: 80vh; */
+    margin-left: 20px;
+}
+
+form {
+    border: solid #fff;
+    border-radius: 8%;
+    padding: 10px 20px;
+}
+
+.tituloContacto {
+    text-align: center;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    height: 2vh;
+    margin: 10px 15px;
+}
+
+.checkbox {
+    width: auto;
+}
+
+.boton {
+    height: 6vh;
+}
+
+@media only screen and (min-width:550px) {
+    /* INDEX */
+    iframe {
+        height: 30vh;
+    }
+    .imagenMenu {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+    header {
+        justify-content: center;
+    }
+
+    /* CIRCUITOS */
+    .containerCircuitos {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-areas: 
+        "header header"
+        "main calendario"
+        "galeria galeria"
+        "footer footer";
+    }
+    .imagenGaleria {
+    width: 48vw;
+    height: 30vh;
+    }
+
+    /* EQUIPOS */
+    .containerEquipos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "autos autos"
+        "pilotos pilotos"
+        "footer footer";
+    }
+    .pilotos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "tituloPilotos tituloPilotos"
+        "piloto1 piloto2";
+    }
+    .tituloPilotos {
+        grid-area: tituloPilotos;
+    }
+    .piloto1 {
+        grid-area: piloto1;
+    }
+    .piloto2 {
+        grid-area: piloto2;
+    }
+    .imagenPiloto {
+        width: 45vw;
+    }
+    .imagenAuto {
+        width: 95vw;
+        height: 50vh;
+    }
+
+    /* CONTACTO */
+    .formulario {
+        width: 45vw;
+        height: 80vh;
+    }
+    .containerContacto {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header header"
+        "main containerImagenContacto"
+        "footer footer";
+    }
+    
+    .imagenContacto {
+        width: 45vw;
+        border-radius: 8%;
+    }
+} 
+
+@media only screen and (min-width:920px) {
+    /* INDEX */
+    .containerIndex {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 1.5fr 1.5fr 0.3fr;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "content1 content2"
+        "footer footer";
+    }
+    iframe {
+        height: 50vh;
+    }
+
+    /* CIRCUITOS */
+    .galeria {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .imagenGaleria {
+        width: 32vw;
+        height: 36vh;
+    }
+
+    /* EQUIPOS */
+    .containerEquipos {
+        grid-template-areas: 
+        "header header"
+        "main autos"
+        "pilotos pilotos"
+        "footer footer";
+    }
+    .articuloEquipo {
+        margin-top: 10px;
+    }
+    .imagenAuto {
+        width: 45vw;
+        height: 40vh;
+    }
+    .imagenPiloto {
+        width: 30vw;
+        height: 40vh;
+    }
+
+    /* CONTACTO */
+    .formulario {
+        width: 40vw;
+    }
+}
+
