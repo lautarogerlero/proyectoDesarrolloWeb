@@ -169,7 +169,7 @@ footer {
 
 .imagenGaleria {
     width: 95vw;
-    height: 30vh;
+    height: 30vh;  
 }
 
 figcaption {
@@ -376,6 +376,10 @@ input, textarea {
     .imagenGaleria {
         width: 32vw;
         height: 36vh;
+        transition: all 1s;
+    }
+    .imagenGaleria:hover {
+        transform: scale(1.1);
     }
 
     /* EQUIPOS */
