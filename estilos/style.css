@@ -10,43 +10,22 @@ body {
     background-color: #333;
 }
 
-header {
+.header {
     grid-area: header;
-    border-radius: 5px;
-    padding-top: 5px;
-    background-image: url(../img/bandera_nav.jpg);
-    display: flex;
-    justify-content: flex-start;
-    height: 8vh;
-} 
-
-/* Aca va a ir el menu desplegable */
-.imagenMenu {
-    width: 20px;
-    height: 20px;
-    border-radius: 15%;
-    margin-left: 10px;
 }
 
-.menu {
-    display: none;
+.logoF1 {
+    max-height: 20px;
 }
-
-nav > ul li {
-    list-style-type: none;
-    padding: 5px;
-    margin: 10px;
-    border: solid #333;
-    background-color: #333;
-    border-radius: 10%;
-    text-decoration: none;
-    
-} 
 
 ul li a {
     text-decoration: none;
     color: #fff;
 } 
+
+a {
+    color: #fff;
+}
 
 ul li {
     list-style-type: none;

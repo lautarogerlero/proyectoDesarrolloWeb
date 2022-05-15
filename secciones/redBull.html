@@ -4,37 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/style.css"> 
     <title>Red Bull</title>
 </head>
 <body>
     <div class="containerEquipos">
-        <header>
-            <figure>
-                <img class="imagenMenu" src="../img/menu.jpg" alt="Menu">
-            </figure>
-            <nav>
-                <ul class="menu">
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="ferrari.html">Ferrari</a>
-                    </li>
-                    <li>
-                        <a href="redBull.html">Red Bull</a>
-                    </li>
-                    <li>
-                        <a href="mercedes.html">Mercedes</a>
-                    </li>
-                    <li>
-                        <a href="circuitos.html">Circuitos</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg bg-dark text-white">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html">
+                     <img class="logoF1" src="../img/logo.png" alt="Logo Formula 1"> 
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="./ferrari.html">Ferrari</a>
+                      <a class="nav-link active" aria-current="page" href="./redBull.html">Red Bull</a>
+                      <a class="nav-link active" aria-current="page" href="./mercedes.html">Mercedes</a>
+                      <a class="nav-link active" aria-current="page" href="./circuitos.html">Circuitos</a>
+                      <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
         </header>
 
         <main>
@@ -102,5 +98,7 @@
             </figure>
         </footer>
     </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
