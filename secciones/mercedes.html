@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
         <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/style.css"> 
@@ -22,11 +23,11 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                      <a class="nav-link active" aria-current="page" href="./ferrari.html">Ferrari</a>
-                      <a class="nav-link active" aria-current="page" href="./redBull.html">Red Bull</a>
-                      <a class="nav-link active" aria-current="page" href="./mercedes.html">Mercedes</a>
-                      <a class="nav-link active" aria-current="page" href="./circuitos.html">Circuitos</a>
-                      <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                      <a class="nav-link active text-white" aria-current="page" href="./ferrari.html">Ferrari</a>
+                      <a class="nav-link active text-white" aria-current="page" href="./redBull.html">Red Bull</a>
+                      <a class="nav-link active text-white" aria-current="page" href="./mercedes.html">Mercedes</a>
+                      <a class="nav-link active text-white" aria-current="page" href="./circuitos.html">Circuitos</a>
+                      <a class="nav-link active text-white" aria-current="page" href="./contacto.html">Contacto</a>
                     </div>
                   </div>
                 </div>
@@ -34,49 +35,78 @@
         </header>
 
         <main>
-            <article>
-                <h1>Mercedes-Benz</h1>
-                <p class="articuloEquipo">Mercedes-Benz es una de las automotrices más exitosas de la Fórmula 1, considerada uno de los cuatro equipos con mejores resultados, junto con Williams, Ferrari y McLaren. Participó inicialmente como constructor en Fórmula 1 en 1954 y 1955, y volvió a hacerlo desde 2010 hasta la actualidad. <br>El equipo alemán ganó ocho Campeonatos de Constructores de forma consecutiva (de 2014 a 2021). Es la tercera escudería que posee más Campeonatos de Pilotos, con nueve (1954, 1955, 2014, 2015, 2016, 2017, 2018, 2019 y 2020); ganados por Lewis Hamilton (6), Juan Manuel Fangio (2) y Nico Rosberg (1). También es el tercer equipo en la historia con más victorias (124) y poles (135) en todos los ítems anteriores, solamente por detrás de Ferrari y McLaren.</p>
-            </article>
+            <h1>Mercedes-Benz</h1>
+            <p class="articuloEquipo">Mercedes-Benz es una de las automotrices más exitosas de la Fórmula 1, considerada uno de los cuatro equipos con mejores resultados, junto con Williams, Ferrari y McLaren. Participó inicialmente como constructor en Fórmula 1 en 1954 y 1955, y volvió a hacerlo desde 2010 hasta la actualidad.</p> 
+            <p>El equipo alemán ganó ocho Campeonatos de Constructores de forma consecutiva (de 2014 a 2021). Es la tercera escudería que posee más Campeonatos de Pilotos, con nueve (1954, 1955, 2014, 2015, 2016, 2017, 2018, 2019 y 2020); ganados por Lewis Hamilton (6), Juan Manuel Fangio (2) y Nico Rosberg (1). También es el tercer equipo en la historia con más victorias (124) y poles (135) en todos los ítems anteriores, solamente por detrás de Ferrari y McLaren.</p>
         </main>
 
-            <!-- Mismas clases para todos los equipos con la idea de reutilizar -->
-        <section class="auto">
-            <h2 class="tituloAuto">El auto</h2>
-            <figure>
-                <img class="imagenAuto" src="../img/mercedes.jpg" alt="Auto de Mercedes">
-            </figure>
+        
+        <section class="galeriaEquipos">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/mercedes.jpg" class="d-block w-100" alt="Auto de Mercedes">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>W13</h5>
+                      <p>El auto de Mercedes-Benz para la temporada 2022</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/pilotosMercedes.jpg" class="d-block w-100" alt="George Russell y Lewis Hamilton">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Russell y Hamilton</h5>
+                      <p>Los pilotos de Mercedes-Benz para la temporada 2022</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
 
         <section class="pilotos">
             <h2 class="tituloPilotos">Los pilotos</h2>
-            <div class="piloto1">       
+            <div class="piloto piloto1">       
                 <figure>
                     <img class="imagenPiloto" src="../img/hamilton.jpg" alt="Lewis Hamilton">
                 </figure>
-                <h3>Lewis Hamilton</h3>
-                <ul>
-                    <li>Pais: Inglaterra</li>
-                    <li>Nacimiento: 07/01/1985</li>
-                    <li>Edad: 37 Años</li>
-                    <li>Podios: 183</li>
-                    <li>Triunfos: 103</li>
-                    <li>Campeonatos: 7</li>
-                </ul>
+                <div class="descripcionPiloto">
+                  <h3 class="nombrePiloto">Lewis Hamilton</h3>
+                  <ul>
+                      <li>Pais: Inglaterra</li>
+                      <li>Nacimiento: 07/01/1985</li>
+                      <li>Edad: 37 Años</li>
+                      <li>Podios: 183</li>
+                      <li>Triunfos: 103</li>
+                      <li>Campeonatos: 7</li>
+                  </ul>
+              </div>
             </div>
-            <div class="piloto2">
+            <div class="piloto piloto2">
                 <figure>
                     <img class="imagenPiloto" src="../img/russell.jpg" alt="George Russell">
                 </figure>
-                <h3>George Russell</h3>
-                <ul>
-                    <li>Pais: Inglaterra</li>
-                    <li>Nacimiento: 15/02/1998</li>
-                    <li>Edad: 24 Años</li>
-                    <li>Podios: 2</li>
-                    <li>Triunfos: 0</li>
-                    <li>Campeonatos: 0</li>
-                </ul>
+                <div class="descripcionPiloto">
+                  <h3 class="nombrePiloto">George Russell</h3>
+                  <ul>
+                      <li>Pais: Inglaterra</li>
+                      <li>Nacimiento: 15/02/1998</li>
+                      <li>Edad: 24 Años</li>
+                      <li>Podios: 2</li>
+                      <li>Triunfos: 0</li>
+                      <li>Campeonatos: 0</li>
+                  </ul>
+              </div>
             </div>
         </section>
 

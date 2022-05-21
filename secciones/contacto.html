@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/style.css">    
@@ -22,36 +23,31 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                      <a class="nav-link active" aria-current="page" href="./ferrari.html">Ferrari</a>
-                      <a class="nav-link active" aria-current="page" href="./redBull.html">Red Bull</a>
-                      <a class="nav-link active" aria-current="page" href="./mercedes.html">Mercedes</a>
-                      <a class="nav-link active" aria-current="page" href="./circuitos.html">Circuitos</a>
-                      <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                      <a class="nav-link active text-white" aria-current="page" href="./ferrari.html">Ferrari</a>
+                      <a class="nav-link active text-white" aria-current="page" href="./redBull.html">Red Bull</a>
+                      <a class="nav-link active text-white" aria-current="page" href="./mercedes.html">Mercedes</a>
+                      <a class="nav-link active text-white" aria-current="page" href="./circuitos.html">Circuitos</a>
+                      <a class="nav-link active text-white" aria-current="page" href="./contacto.html">Contacto</a>
                     </div>
                   </div>
                 </div>
               </nav>
         </header>
-        
+
         <main class="formulario">
             <form action="" method="">
                 <h2 class="tituloContacto">CONTACTO</h2>
                 <input type="text" name="nombre" placeholder="Escribí tu nombre" required> 
                 <input type="email" name="email" placeholder="Email" required>          
-                <textarea name="consulta" placeholder="Escribí tu consulta aca..."></textarea>
-                <div>Queres recibir más info?
+                <textarea name="consulta" rows="3" placeholder="Escribí tu consulta aca..."></textarea>
+                <div>
+                    <label class="form-check-label" for="exampleCheck1">Quiero recibir más info</label>
                     <input class="checkbox" type="checkbox" name="acepta" value="1">
                 </div>
                 <input class="boton" type="reset">
                 <input class="boton" type="submit">
             </form>
         </main>
-
-        <section class="containerImagenContacto">
-            <figure>
-                <img class="imagenContacto" src="../img/festejo.jpg" alt="Schumacher festejando">
-            </figure>
-        </section>
     
         <footer class="footerContacto">    
             <figure>
