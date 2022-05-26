@@ -1,0 +1,55 @@
+/* CONTACTO */
+.containerContacto {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 3fr 0.8fr;
+    text-align: center;
+    gap: 0.2rem;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.formulario {
+    width: 80vw;
+    height: 75vh;
+    margin: 2em;
+}
+
+form {
+    border: solid $texto;
+    border-radius: 8%;
+    padding: 10px;
+}
+
+.tituloContacto {
+    text-align: center;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    height: 2vh;
+    margin: 10px 15px;
+}
+
+textarea {
+    height: 6vh;
+}
+
+.checkbox {
+    width: auto;
+}
+
+.boton {
+    height: 8vh;
+    background-color: $botonContacto;
+    border-radius: 4%;
+    transition: all 0.5s ease;
+    text-align: center;
+        &:hover {
+            background-color: $botonContactoHover;
+        }
+}

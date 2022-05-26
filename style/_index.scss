@@ -1,0 +1,32 @@
+/* INDEX */
+.containerIndex {
+    display:grid;
+    height:100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 2.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "video1"
+    "video2"
+    "footer";
+    gap: 0.2rem;
+    text-align:center;
+}
+
+#video1 {
+    grid-area: video1;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+#video1 {
+    grid-area: video2;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+iframe {
+    width: 98%;
+    margin: 0px 5px;
+}

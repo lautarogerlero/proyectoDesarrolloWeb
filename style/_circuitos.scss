@@ -1,0 +1,30 @@
+/* CIRCUITOS */
+.containerCircuitos {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0.2rem;
+    grid-template-areas: 
+    "header"
+    "main"
+    "calendario"
+    "galeria"
+    "footer";
+    text-align: center;
+}
+
+.calendario {
+    grid-area: calendario;
+    margin: 5px 10px;
+}                                                           
+
+/* Display none porque pierde mucha resolución con la pantalla chica */
+.imagenCalendario {
+    width: 100%;
+    display: none;
+} 
+
+.galeria {
+    grid-area: galeria;
+}
