@@ -28,10 +28,19 @@ form {
     text-align: center;
 }
 
+/* EXTEND Y MIXIN */
+
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
 input, textarea {
-    width: 80%;
+    @extend.tituloContacto;
+    @include sizes (80%, 2vh);
+    /* width: 80%; */
     padding: 10px;
-    height: 2vh;
+    /* height: 2vh; */
     margin: 10px 15px;
 }
 
@@ -53,3 +62,16 @@ textarea {
             background-color: $botonContactoHover;
         }
 }
+
+/* MAP */
+$mapa:(
+    enviar: rgb(236, 145, 145),
+    reset: rgb(132, 132, 233),
+);
+
+@each $boton, $color in $mapa {
+    .#{$boton}{
+        background-color: $color;
+    }
+}
+

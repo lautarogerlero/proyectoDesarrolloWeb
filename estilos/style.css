@@ -259,14 +259,17 @@ form {
   padding: 10px;
 }
 
-.tituloContacto {
+.tituloContacto, input, textarea {
   text-align: center;
 }
 
+/* EXTEND Y MIXIN */
 input, textarea {
   width: 80%;
-  padding: 10px;
   height: 2vh;
+  /* width: 80%; */
+  padding: 10px;
+  /* height: 2vh; */
   margin: 10px 15px;
 }
 
@@ -289,6 +292,15 @@ textarea {
 
 .boton:hover {
   background-color: #999999;
+}
+
+/* MAP */
+.enviar {
+  background-color: #ec9191;
+}
+
+.reset {
+  background-color: #8484e9;
 }
 
 @media only screen and (min-width: 576px) {
