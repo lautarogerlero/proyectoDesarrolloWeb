@@ -248,7 +248,7 @@ iframe {
 }
 
 .formulario {
-  width: 80vw;
+  width: 85vw;
   height: 75vh;
   margin: 2em;
 }
@@ -341,7 +341,9 @@ textarea {
   }
   /* CONTACTO */
   .formulario {
-    width: 45vw;
+    width: 60vw;
+    max-width: 450px;
+    margin-left: 20vw;
   }
 }
 
@@ -377,6 +379,8 @@ textarea {
   }
   /* CONTACTO */
   .formulario {
-    width: 35vw;
+    width: 36vw;
+    max-width: 700px;
+    margin-left: 34vw;
   }
 }

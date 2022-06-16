@@ -1,0 +1,101 @@
+@media only screen and (min-width:576px) {
+    /* INDEX */
+    iframe {
+        height: 30vh;
+    }
+
+    /* CIRCUITOS */
+
+    /* Mostrar la imagen del calendario */
+    .imagenCalendario {
+        display: block;
+
+    } 
+    /* Dimensiones de las imagenes de la galeria */
+    .carousel-inner img, .carousel-item img {
+        height: 60vh;
+    }
+
+    /* EQUIPOS */
+    .containerEquipos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "pilotos pilotos"
+        "galeriaEquipos galeriaEquipos"
+        "footer footer";
+    }
+    .pilotos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "tituloPilotos tituloPilotos"
+        "piloto1 piloto2";
+    }
+    .tituloPilotos {
+        grid-area: tituloPilotos;
+    }
+    .piloto {
+        width: 43vw;
+    }
+    .piloto1 {
+        grid-area: piloto1;
+    }
+    .piloto2 {
+        grid-area: piloto2;
+    }
+
+    /* CONTACTO */
+    .formulario {
+        width: 60vw;
+        max-width: 450px;
+        margin-left: 20vw;
+    }
+} 
+
+@media only screen and (min-width:920px) {
+    /* INDEX */
+    .containerIndex {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 1.5fr 1.5fr 0.3fr;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "video1 video2"
+        "footer footer";
+    }
+    iframe {
+        height: 50vh;
+    }
+
+    /* CIRCUITOS */
+    .galeria {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .containerCircuitos {
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-areas: 
+        "header header header"
+        "main calendario calendario"
+        "galeria galeria galeria"
+        "footer footer footer";
+    }
+    /* Dimensiones de las imagenes de la galeria */
+    .carousel-inner img, .carousel-item img {
+    height: 90vh;
+    }
+
+    /* EQUIPOS */
+    .articuloEquipo {
+        margin-top: 10px;
+    }
+
+    /* CONTACTO */
+    .formulario {
+        width: 36vw;
+        max-width: 700px;
+        margin-left: 34vw;
+    }
+}
